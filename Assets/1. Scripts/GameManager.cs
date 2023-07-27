@@ -23,7 +23,7 @@ namespace Manager
         void GameStart()
         {
             playManager.startGame(10, 10);
-            enemyManager.InstantiateEnemy(10);
+            // enemyManager.InstantiateEnemy(10);
 
             towerInstantiateBtn.gameObject.SetActive(true);
         }
