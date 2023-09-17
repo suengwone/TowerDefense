@@ -3,7 +3,16 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Normal_Ground
+  - Normal_Air
+  - Elite_Ground
+  - Elite_Air
+  - MidBoss_Ground
+  - MidBoss_Air
+  - Boss_Ground
+  - Boss_Air
+  - Manager
   layers:
   - Default
   - TransparentFX
