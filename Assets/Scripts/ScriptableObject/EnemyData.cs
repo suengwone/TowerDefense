@@ -20,6 +20,7 @@ namespace Personal.Data.Enemy
         
         public float healthPoint;
         public float defensePoint;
+        public float attackPoint;
         public float speedPoint;
         public EnemyType enemyType;
         public MoveType enemyMoveType;

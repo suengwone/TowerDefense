@@ -3,9 +3,10 @@ using UnityEngine;
 
 namespace Personal.Objects.Enemy
 {
+    using Common;
     using Data.Enemy;
-    
-    public abstract class EnemyBase : MonoBehaviour
+
+    public abstract class EnemyBase : BaseProperty
     {
         [Serializable]
         public enum EnemyState
@@ -38,9 +39,12 @@ namespace Personal.Objects.Enemy
                 }
             }
         }
-        public float healthPoint    { get; set; }
-        public float defensePoint   { get; set; }
-        public float speedPoint     { get; set; }
+        protected private float speedPoint;
+        public float SpeedPoint
+        {
+            get => speedPoint;
+            set => speedPoint = value;
+        }
         #endregion
 
         #region Abstract
@@ -59,6 +63,7 @@ namespace Personal.Objects.Enemy
         {
             this.healthPoint    = enemyData.healthPoint;
             this.defensePoint   = enemyData.defensePoint;
+            this.attackPoint    = enemyData.attackPoint;
             this.speedPoint     = enemyData.speedPoint;
             this.State          = EnemyState.Move;
         }

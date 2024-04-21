@@ -1,27 +1,15 @@
-using Personal.Data.Tower;
 using UnityEngine;
 
 namespace Personal.Objects.Tower
 {
-    public abstract class TowerBase : MonoBehaviour
+    using Common;
+    using Data.Tower;
+
+    public abstract class TowerBase : BaseProperty
     {
-        public enum PassiveType
-        {
-            // attack count + 1
-            CountUp,
-            // attack range +
-            RangeUp,
-            // attack speed +
-            SpeedUp,
-            // attack damage +
-            DamageUp,
-            // monster move Speed - (attacked monsters, for n seconds)
-            SpeedDown,
-            // monster defense - (attacked monsters, for n seconds)
-            DefenseDown,
-            // monster HP - (wave start, all monsters)
-            HPDown
-        }
+        [SerializeField]
+        private int cost;
+        public int Cost => cost;
 
         #region Abstract
         public virtual void Attack()
@@ -37,7 +25,11 @@ namespace Personal.Objects.Tower
         #region Implement
         public void Initial(TowerData towerData)
         {
-            
+            // Random Tower Type
+
+            // Random Passive
+
+
         }
         #endregion
     }

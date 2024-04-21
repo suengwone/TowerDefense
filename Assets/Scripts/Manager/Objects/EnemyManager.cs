@@ -9,12 +9,6 @@ namespace Personal.Manager.Objects.Enemy
     // Line Move
     public class EnemyManager : MonoBehaviour
     {
-        [SerializeField] private readonly int NormalCount;
-        [SerializeField] private readonly int EliteCount;
-        [SerializeField] private readonly int MidBossCount;
-        [SerializeField] private readonly int BossCount;
-
-
         private void Start()
         {
             // instantiate enemy object pool

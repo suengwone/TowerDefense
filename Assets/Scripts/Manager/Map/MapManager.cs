@@ -3,18 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MapManager : MonoBehaviour
+namespace Personal.Manager.Map
 {
-    public void LoadSelectedMap(int mapIdx)
+    public class MapManager : MonoBehaviour
     {
-        SceneManager.LoadScene(mapIdx);
+        [SerializeField] private Transform centerTarget;
 
-        // Loading (Delay 10 Second)
-        // Add ad or tips
+        public void LoadSelectedMap(int mapIdx)
+        {
+            SceneManager.LoadScene(mapIdx);
+
+            // Loading (Delay 10 Second)
+            // Add ad or tips
+        }
     }
-
-    // public List<Vector3> SetRandomPoints()
-    // {
-    //     return new List<Vector3>();
-    // }
 }
