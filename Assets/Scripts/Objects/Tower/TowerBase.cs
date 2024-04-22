@@ -3,33 +3,25 @@ using UnityEngine;
 namespace Personal.Objects.Tower
 {
     using Common;
-    using Data.Tower;
 
-    public abstract class TowerBase : BaseProperty
+    public abstract class TowerBase : TowerProperty, IAttackable, IUpgradable
     {
-        [SerializeField]
-        private int cost;
-        public int Cost => cost;
+        public int Cost { get; }
+        public int Level { get; set; }
+        public float AttackCount { get; set; }
+        public float AttackRange { get; set; }
+        public float AttackSpeed { get; set; }
 
         #region Abstract
-        public virtual void Attack()
-        {
-            Debug.Log("Attack");
-        }
-        public virtual void Upgrade()
-        {
-            Debug.Log("Upgrade");
-        }
+        public abstract void Attack();
+        public abstract void Upgrade();
         #endregion
 
         #region Implement
-        public void Initial(TowerData towerData)
+        public void Initial()
         {
-            // Random Tower Type
-
             // Random Passive
-
-
+            SetRandomType();
         }
         #endregion
     }
