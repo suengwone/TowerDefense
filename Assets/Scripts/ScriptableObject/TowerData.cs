@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace Personal.Data.Tower
@@ -5,6 +7,19 @@ namespace Personal.Data.Tower
     [CreateAssetMenu(fileName = "Tower Data", menuName = "Scriptable Object/Tower Data")]
     public class TowerData : ScriptableObject
     {
+        [SerializeField]
+        List<TowerProperty> towerList = new ();
+    }
+
+    [Serializable]
+    public struct TowerProperty
+    {
+        [SerializeField] private Objects.Tower.TowerProperty.TowerType towerType;
+        public Objects.Tower.TowerProperty.TowerType TowerType
+        {
+            get => towerType;
+        }
+
         [SerializeField] private float attackRange;
         public float AttackRange
         {
