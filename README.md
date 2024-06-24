@@ -1,5 +1,7 @@
 # Tower Defense
-Toy Project (For Game Client)
+Toy Project
+
+https://atlantic-stream-17f.notion.site/Tower-Defense-9f504656b93b4e789d7d258c7ba1dab8?pvs=4
 
 # Develop Spec Table
 | Title                                  | Description                                                       |

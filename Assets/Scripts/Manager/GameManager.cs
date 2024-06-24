@@ -1,21 +1,23 @@
-using System.Collections.Generic;
-using Personal.Manager.Objects.Enemy;
-using Personal.Manager.Objects.Tower;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace Personal.Manager.Game
 {
+    // After Selecting Stage
     public class GameManager : MonoBehaviour
     {
-        public void GameStart()
+        private void GameStart()
         {
-            // Generate Random map
-            // Start Wave
+            
         }
 
-        // Info Manager
-        // Load User Info in Server (App Start)
-        // Save User Info in Server (Event)
+        private void Retry()
+        {
+
+        }
+
+        private void GameOver()
+        {
+
+        }
     }
 }
