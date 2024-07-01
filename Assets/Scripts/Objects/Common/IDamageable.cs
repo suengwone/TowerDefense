@@ -1,7 +1,9 @@
 namespace Personal.Objects.Common
 {
-    public interface IDamageable
+    public interface IDamaageable
     {
-        void Damage(float damagePoint);
+        public float MaxHealthPoint     { get; set; }
+        public float CurrentHealthPoint { get; set; }
+        public float DefensePoint       { get; set; }
     }
 }

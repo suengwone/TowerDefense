@@ -9,16 +9,16 @@ namespace Personal.Objects.Tower
         public void Initial()
         {
             base.Initial();
-            towerType = TowerType.Laser;
+            // towerType = TowerType.Laser;
         }
 
-        public override void Attack()
-        {
+        // public override void Attack()
+        // {
             // TODO
             // Attack Both Ground and Air Enemy
             // Attack with Line
             // Immediate Attack
             // Continuos Damage
-        }
+        // }
     }
 }

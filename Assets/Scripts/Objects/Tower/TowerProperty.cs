@@ -2,9 +2,7 @@ using UnityEngine;
 
 namespace Personal.Objects.Tower
 {
-    using Common;
-
-    public class TowerProperty : BaseProperty
+    public class TowerProperty
     {
         public enum TowerType
         {
@@ -23,16 +21,14 @@ namespace Personal.Objects.Tower
             // Attack Point Up
             AttackUp
         }
-
-        [SerializeField] protected private TowerType towerType;
-        public TowerType CurTowerType => towerType;
-
-        [SerializeField] protected private PassiveType passiveType;
-        public PassiveType CurPassiveType => passiveType;
-
-        public void SetRandomType()
+        public enum TowerState
         {
-            passiveType = (PassiveType)Random.Range(0, 4);
+            Idle,
+            Attack,
+            Upgrade,
+            Skill,
+            Damage,
+            Die,
         }
     }
 }
