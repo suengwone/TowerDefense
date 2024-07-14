@@ -1,10 +1,10 @@
 using UnityEngine;
 
-namespace Personal.Objects.Tower
+namespace Objects.Tower
 {
     using Common;
 
-    public abstract class TowerBase : IAttackable, IUpgradable, IDamageable
+    public abstract class TowerBase : MonoBehaviour, IAttackable, IUpgradable, IDamageable
     {
         public int Cost { get; }
         float IAttackable.AttackCount { get; set; }

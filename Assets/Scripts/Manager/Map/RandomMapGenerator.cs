@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
-namespace Personal.Manager.Map
+namespace Manager.Map
 {
     public class RandomMapGenerator : MonoBehaviour
     {

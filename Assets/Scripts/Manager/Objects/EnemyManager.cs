@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Personal.Manager.Objects.Enemy
+namespace Manager.Objects.Enemy
 {
     // Enemy Manager
     // Enemy Instantiate in Line

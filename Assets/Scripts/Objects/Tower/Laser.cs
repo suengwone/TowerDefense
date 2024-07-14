@@ -2,23 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Personal.Objects.Tower
+namespace Objects.Tower
 {
+    [DisallowMultipleComponent]
+    [AddComponentMenu("some/something")]
     public class Laser : TowerBase
     {
-        public void Initial()
-        {
-            base.Initial();
-            // towerType = TowerType.Laser;
-        }
 
-        // public override void Attack()
-        // {
-            // TODO
-            // Attack Both Ground and Air Enemy
-            // Attack with Line
-            // Immediate Attack
-            // Continuos Damage
-        // }
     }
 }

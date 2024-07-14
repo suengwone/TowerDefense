@@ -1,12 +1,14 @@
 using System;
 using UnityEngine;
 
-namespace Personal.Objects.Enemy
+namespace Objects.Enemy
 {
     using Common;
     using Data.Enemy;
+    using Data;
+    using Unity.Properties;
 
-    public abstract class EnemyBase : BaseProperty
+    public abstract class EnemyBase
     {
         [Serializable]
         public enum EnemyState
@@ -61,9 +63,9 @@ namespace Personal.Objects.Enemy
         #region Implement
         public void Initial(EnemyData enemyData)
         {
-            this.healthPoint    = enemyData.healthPoint;
-            this.defensePoint   = enemyData.defensePoint;
-            this.attackPoint    = enemyData.attackPoint;
+            // this.healthPoint    = enemyData.healthPoint;
+            // this.defensePoint   = enemyData.defensePoint;
+            // this.attackPoint    = enemyData.attackPoint;
             this.speedPoint     = enemyData.speedPoint;
             this.State          = EnemyState.Move;
         }

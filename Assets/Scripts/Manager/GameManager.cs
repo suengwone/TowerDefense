@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Personal.Manager.Game
+namespace Manager.Game
 {
     // After Selecting Stage
     public class GameManager : MonoBehaviour

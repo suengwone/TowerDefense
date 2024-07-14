@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Personal.Objects.Tower
+namespace Objects.Tower
 {
     public class TowerProperty
     {

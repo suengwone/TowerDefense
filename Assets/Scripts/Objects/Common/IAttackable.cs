@@ -1,4 +1,4 @@
-namespace Personal.Objects.Common
+namespace Objects.Common
 {
     public interface IAttackable
     {

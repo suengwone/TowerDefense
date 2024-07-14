@@ -1,6 +1,6 @@
 using System;
 
-namespace Personal.Data.Enemy
+namespace Data.Enemy
 {
     [Serializable]
     public class EnemyData

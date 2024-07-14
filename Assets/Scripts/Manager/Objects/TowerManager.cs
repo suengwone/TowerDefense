@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Personal.Manager.Objects.Tower
+namespace Manager.Objects.Tower
 {
     public class TowerManager
     {

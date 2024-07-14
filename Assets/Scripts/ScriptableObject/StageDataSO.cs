@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Personal.Data.Game.Stage
+namespace Data.Game.Stage
 {
     using Enemy;
 

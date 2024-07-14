@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Personal.Manager.User
+namespace Manager.User
 {
     // Info Manager
     public class UserInfoManager

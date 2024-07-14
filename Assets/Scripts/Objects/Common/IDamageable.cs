@@ -1,6 +1,6 @@
-namespace Personal.Objects.Common
+namespace Objects.Common
 {
-    public interface IDamaageable
+    public interface IDamageable
     {
         public float MaxHealthPoint     { get; set; }
         public float CurrentHealthPoint { get; set; }

@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Personal.Data
+namespace Data
 {
     [CreateAssetMenu(fileName = "Base Data", menuName = "Scriptable Object/Base Data")]
     public class BaseData : ScriptableObject
